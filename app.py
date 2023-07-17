@@ -226,6 +226,34 @@ def infopost():
 
 
 @app.route('/api/mock', methods=['GET'])
+# def mock():
+#     conn = pymysql.connect(
+#         host=app.config['MYSQL_HOST'],
+#         user=app.config['MYSQL_USER'],
+#         password=app.config['MYSQL_PASSWORD'],
+#         db=app.config['MYSQL_DB']
+#     )
+#     cur = conn.cursor()
+#     query = "SELECT MAX(id) FROM INFO"
+#     cur.execute(query)
+#     result = cur.fetchone()
+#     max_id = int(result[0])
+#     # data_last = "SELECT * FROM INFO WHERE id = %s"
+#     # # fin = cur.execute(data_last, (max_id,)).fetchone()
+#     # sql_new_user = 'SELECT smog,CH4,CO,tem FROM INFO WHERE id = %s'
+#     # smog, CH4, CO, tem = cur.execute(sql_new_user, max_id).fetchone()
+#     # jg_list = [smog, CH4, CO, tem]
+#     query = "SELECT * FROM INFO WHERE id = (SELECT MAX(id) FROM INFO)"
+#     cur.execute(query)
+#     result = cur.fetchone()
+#     keylist = ['smog', 'CH4', 'CO', 'tem', 'id']
+#     res = {}
+#     for i in range(len(keylist)):
+#         res[keylist[i]]=result[i]
+#
+#     conn.commit()
+#     conn.close()
+#     return  json.dumps(res)
 def mock():
     conn = pymysql.connect(
         host=app.config['MYSQL_HOST'],
@@ -234,10 +262,10 @@ def mock():
         db=app.config['MYSQL_DB']
     )
     cur = conn.cursor()
-    query = "SELECT MAX(id) FROM INFO"
-    cur.execute(query)
-    result = cur.fetchone()
-    max_id = int(result[0])
+    # query = "SELECT MAX(id) FROM INFO"
+    # cur.execute(query)
+    # result = cur.fetchone()
+    # max_id = int(result[0])
     # data_last = "SELECT * FROM INFO WHERE id = %s"
     # # fin = cur.execute(data_last, (max_id,)).fetchone()
     # sql_new_user = 'SELECT smog,CH4,CO,tem FROM INFO WHERE id = %s'
