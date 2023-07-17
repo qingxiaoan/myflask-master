@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db [2]" uuid="b2acb4ea-6aa1-4fec-83de-347029fe424d">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\l\Desktop\myflask-master\db.db</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="demo@101.43.129.9" uuid="e0a5fa26-efde-4751-a1c3-500492171d0f">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
